@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- font awesome -->
+    <script src="https://kit.fontawesome.com/27c22c43a7.js" crossorigin="anonymous"></script>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  
+.sora-font {
+  font-family: "Sora", serif;
+  font-style: normal;
+}
+</style>
+
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    
+
 </head>
-<body>
+<body class="sora-font">
+    <header class="bg-[#EFEBE3] max-w-full max-auto px-16 lg:px-0">
+        <!-- navbar section -->
+         <nav class="navbar" >
+            <!-- logo section -->
+             <div class="navbar-start"><img src="c2-assets/logo-header.png" alt=""></div>
+             <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                   <li>                    
+                        <a href="">Product</a>
+                    </li>
+                    <li>                    
+                        <a href="">Services</a>
+                    </li>
+                    <li>                    
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+             </div>
+             <div class="navbar-end hidden lg:flex gap-5">
+               <div><i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+
+               <div class="">
+                <button class="btn btn-outline w-28 border-green-500 ">Login</button>
+                <button class="btn w-28 bg-green-600 text-white">Register</button>
+               </div>
+               
+              </div>
+             
+              <div class="mx-auto"><i class="fa-solid fa-bars md:hidden "></i></div>
+
+         </nav>
+
+         <!-- Freshness section -->
+          <section class="pt-24 text-center ">
+            <div>
+            <h1 class="text-4xl font-semibold">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-sm text-gray-400 py-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="lg:w-6/12 lg:ml-72 w-full ">
+              <img src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+          
+          </section>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
