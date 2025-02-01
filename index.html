@@ -39,7 +39,8 @@
         <!-- navbar section -->
          <nav class="navbar" >
             <!-- logo section -->
-             <div class="navbar-start"><img src="c2-assets/logo-header.png" alt=""></div>
+             <div class="navbar-start hidden lg:flex"><img src="c2-assets/logo-header.png" alt=""></div>
+             <div class="navbar start lg:hidden"><img src="c2-assets/logo-footer.png" alt=""></div>
              <div class="navbar-center hidden lg:flex">
                 <ul class="text-lg menu menu-horizontal px-1">
                    <li>                    
@@ -65,9 +66,11 @@
                
               </div>
              
-              <div class="mx-auto"><i class="fa-solid fa-bars md:hidden "></i></div>
+              <div class="mx-auto text-green-500 text-3xl"><i class="fa-solid fa-bars md:hidden "></i></div>
 
          </nav>
+         <div class=" max-w-screen lg:hidden border-solid border-2 border-green-600 ..."></div>
+         
 
          <!-- Freshness section -->
           <section class="pt-24 text-center ">
@@ -84,38 +87,108 @@
     </header>
     <main>
       <!-- services section -->
-       <section class="max-w-full max-auto py-16 text-center items-center">
-        <h3 class="text-2xl font-semibold text-green-600 mr-96 ">Services</h3>
+       <section class="max-w-full max-auto  pt-16  items-center lg:w-[1320px]">
+        <h3 class="text-2xl font-semibold text-green-600 pt-1 ml-56 ">Services</h3>
         <!-- grid-cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-56 text-center">
           <!-- card producd -->
            <div class="rounded-xl shadow-md bg-[#EFEBE3] overflow-hidden">
-              <div><img class="mx-auto p-2 bg-white rounded-full" src="c2-assets/service.png" alt=""></div>
+              <div><img class="mx-auto p-2 mt-3 bg-white rounded-full" src="c2-assets/service.png" alt=""></div>
               <div class="p-4">
               <h2 class="text-lg font-semibold">24/7 Services </h2>
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <p class="text-gray-400">Get your groceries from 24/7 Vegetables & Groceries delivered to your door in no time!</p>
               </div>
            </div>
           <!-- card producd -->
            <div class="rounded-lg shadow-md overflow-hidden bg-[#EFEBE3]">
-              <div><img class="mx-auto p-2 bg-white rounded-full" src="c2-assets/delivery.png" alt=""></div>
+              <div><img class="mx-auto p-2 mt-3 bg-white rounded-full" src="c2-assets/delivery.png" alt=""></div>
               <div class="p-4">
               <h2 class="text-lg font-semibold ">Fast Delivery</h2>
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <p class="text-gray-400">Get your Groceries & Vegetables from our shop. Because we give you fast delivery.</p>
               </div>
            </div>
               <!-- card producd -->
                <div class="rounded-lg shadow-md bg-[#EFEBE3] overflow-hidden">
-                  <div><img class="mx-auto p-2 bg-white rounded-full" src="c2-assets/healthy.png" alt=""></div>
+                  <div><img class="mx-auto p-2 mt-3 bg-white rounded-full" src="c2-assets/healthy.png" alt=""></div>
                   <div class="p-4">
                       <h2 class="font-semibold text-lg">Healthy Products</h2>
                       
-                      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                      <p class="text-gray-400">Enjoy farm-fresh groceries & vegetables delivered derectly at your home. We give you healthy product.</p>
                   </div>
                </div>
                </div>
         
        </section>
+       <!-- poputar products section -->
+       <section class="bg-[#EFEBE3] max-w-full max-auto py-16 mt-24">
+        <h3 class="text-2xl font-semibold text-green-600 pt-1 ml-56 mb-5 ">Popular Products</h3>
+        <div class="flex">
+
+
+        <div class="card bg-gradient-to-r from-green-500 to-yellow-50 w-96 shadow-xl ml-56">
+      
+          <div class="card-body">
+            <h2 class="card-title text-white">30% off</h2>
+            <p>Discover a world of treats, toys, and essentials handpicked for</p>
+            <button class="btn w-32 bg-white">Buy Now</button>
+          </div>
+          <figure class="-mt-24 ml-10">
+            <img src="c2-assets/vegetable-offer.png" alt="">
+          </figure>
+              
+        </div>
+
+
+        
+
+        </div>
+
+
+        
+       </section>
+
+       <!-- aeeival & offers -->
+        <section class="mx-auto items-center lg:w-[1320px] mt-10">
+          <h1 class="text-2xl font-semibold text-green-600 pt-1 ml-56 mb-5 ">Arrival & Offers</h1>
+          <div class="grid grid-cols-1  lg:flex mx-auto  gap-5  w-full ">
+            <!-- first card -->
+            <div class="justify-between bg-green-900 rounded-xl flex lg:w-96 sm:w-[358px] ml-56">
+                <div class="pl-4 p-5 ">
+                    <img class=" mb-2" src="c2-assets/dawat-logo.png" alt="">
+                    <button class="btn bg-[#63B76D] border-none text-white mb-2">Cook Exotic Dishes</button>
+                    <h3 class="text-2xl text-white gap-y-5">UP to <span class="font-bold">20% OFF</span></h3>
+
+                </div>
+                <div>
+                    <img class="w-full mt-5 " src="c2-assets/dawat-mock-up.png" alt="">
+
+                </div>
+
+            </div>
+            <!-- second card -->
+           
+                <div class="justify-between bg-blue-900 rounded-xl flex lg:ml-6 lg:w-80 h-72 sm:w-[358px] ml-56 ">
+                    <div class="pl-4 p-5  ">
+                        <img class="mb-2" src="c2-assets/india-gate-logo.png" alt="">
+                        <button class="btn bg-[#2A4D97] text-white overflow-hidden border-none mb-2">World’s No.1 Rice</button>
+                        <h3 class="text-2xl text-white">UP to <span class="font-bold">40% OFF</span></h3>
+    
+                    </div>
+                    <div>
+                        <img class="w-full p-5 " src="c2-assets/india-gate-mock-up.png" alt="">
+    
+                    </div>
+    
+                </div>
+
+            
+        </div>
+
+
+
+
+         </div>
+        </section>
 
     </main>
     <footer>
